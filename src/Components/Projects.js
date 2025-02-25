@@ -1,4 +1,3 @@
-// components/Projects.js
 import React from "react";
 import CodeIcon from "./icons/code";
 import TaildwindIcon from "./icons/TaildwindIcon";
@@ -85,7 +84,7 @@ const Projects = () => {
 				"Es una maquetacion de un E-commerce con todas sus secciones necesarias, Optimizacion Seo y Responsive",
 			image: "/projects/NextShop.png",
 			link: "https://martinaguilera022.github.io/nexshop/",
-			github: "https://github.com/martinAguilera022/NextShop",
+			github: "https://github.com/martinAguilera022/nexshop",
 			tags: [TAGS.HTML, TAGS.CSS, TAGS.JavaScript, TAGS.Sass],
 		},
 		// Agrega más proyectos aquí
