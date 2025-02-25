@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: #050505;
+  --foreground: #ededed;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Onest Variable',system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: max-content;
+}
