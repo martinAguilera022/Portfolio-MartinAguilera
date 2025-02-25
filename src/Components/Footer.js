@@ -1,4 +1,5 @@
-// components/Footer.js
+import Link from "next/link";
+
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
 
@@ -7,23 +8,22 @@ const Footer = () => {
 			<div className="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4">
 				<span className="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90">
 					© {currentYear}
-					<a href="https://www.linkedin.com/in/martin-aguilera-69005527a/" className="hover:underline">
+					<a
+						href="https://www.linkedin.com/in/martin-aguilera-69005527a/"
+						className="hover:underline"
+					>
 						Martin Aguilera
 					</a>
 					. Casi todos los derechos reservados
 				</span>
 				<ul className="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0">
 					<li>
-						<a href="/#sobre-mi" className="hover:underline me-4 md:me-6">
-							Sobre mí
-						</a>
+						<Link href="#sobre-mi">
+							<a className="hover:underline me-4 md:me-6">Sobre mí</a>
+						</Link>
 					</li>
 					<li>
-						<a
-							id="contacto"
-							href="mailto:totoaguil022@gmail.com"
-							className="hover:underline"
-						>
+						<a href="mailto:totoaguil022@gmail.com" className="hover:underline">
 							Contacto
 						</a>
 					</li>
