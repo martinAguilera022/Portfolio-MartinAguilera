@@ -1,12 +1,12 @@
-import Projects from '../Components/Projects';
+import Projects from '../components/Projects';
 
-import Badge from '../Components/Badge';
-import GithubIcon from "../Components/icons/GithubIcon";
-import LinkedInIcon from "@/Components/icons/LinkedIn";
-import GoogleEmailIcon from '@/Components/icons/Gmail';
-import ButtonLink from '@/Components/icons/ButtonLinks';
-import CodeIcon from '@/Components/icons/code';
-import AboutMe from '@/Components/AboutMe';
+import Badge from '../components/Badge';
+import GithubIcon from "../components/icons/GithubIcon";
+import LinkedInIcon from "@/components/icons/LinkedIn";
+import GoogleEmailIcon from '@/components/icons/Gmail';
+import ButtonLink from '@/components/icons/ButtonLinks';
+import CodeIcon from '@/components/icons/code';
+import AboutMe from '@/components/AboutMe';
 
 
 export default function Home() {

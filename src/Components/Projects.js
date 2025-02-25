@@ -44,11 +44,11 @@ const Projects = () => {
 			className: "",
 			icon: cssIcon,
 		},
-		React:{
+		React: {
 			name: "React",
 			className: "",
-			icon: ReactIcon
-		}
+			icon: ReactIcon,
+		},
 	};
 
 	const projects = [
