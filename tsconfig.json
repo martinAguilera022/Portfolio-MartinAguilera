@@ -31,14 +31,14 @@
     "src/components/Projects.js",
     "src/components/icons/TailwindIcon.js",
     "src/components/icons/ButtonLinks.js",
-    "src/components/Badge.js",
+    "src/components/Badge.tsx",
     "src/components/icons/HTMLIcon.js",
     "src/components/AboutMe.jsx",
     "src/components/icons/VerIcon.js",
-    "src/components/NavBar.js",
-    "src/components/Footer.js", // Añadido
-    "src/components/icons/GithubIcon.js", // Añadido
-    "src/components/icons/LinkedIn.js" // Añadido
+    "src/components/NavBar.tsx",
+    "src/components/Footer.tsx",
+    "src/components/icons/GithubIcon.js", 
+    "src/components/icons/LinkedIn.js" 
   ],
   "exclude": ["node_modules"]
 }

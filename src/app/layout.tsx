@@ -3,9 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import '@fontsource-variable/onest';
 
-import Footer from '@/components/Footer';
 import Home from "./page";
-import Navbar from "@/components/NavBar";
+
+import Footer from '../components/Footer';
+import NavBar from '../components/NavBar';
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -32,7 +33,7 @@ export default function RootLayout({
         
       >
         <div className="absolute top-0 z-[-2] h-full w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
-        <Navbar></Navbar>
+        <NavBar></NavBar>
         <Home></Home>
         <Footer></Footer>
         </div>
