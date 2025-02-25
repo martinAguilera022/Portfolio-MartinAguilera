@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/Projects.js", "src/Components/Projects.js", "src/Components/icons/TaildwindIcon.js", "src/Components/icons/ButtonLinks.js", "src/Components/Badge.js", "src/Components/icons/HTMLIcon.js", "src/Components/AboutMe.jsx", "src/Components/icons/VerIcon.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/Projects.js", "src/Components/Projects.js", "src/Components/icons/TaildwindIcon.js", "src/Components/icons/ButtonLinks.js", "src/Components/Badge.js", "src/Components/icons/HTMLIcon.js", "src/Components/AboutMe.jsx", "src/Components/icons/VerIcon.js", "src/Components/NavBar.js"],
   "exclude": ["node_modules"]
 }
