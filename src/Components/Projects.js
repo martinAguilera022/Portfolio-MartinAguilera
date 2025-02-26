@@ -94,7 +94,7 @@ const Projects = () => {
 		return (
 			<div className=" p-6 rounded-lg shadow-md">
 				<h3 className="text-2xl font-bold mb-4 text-green-400">{title}</h3>
-				<p className="text-lg mb-4">{description}</p>
+				<p className="text-lg mb-4 text-white">{description}</p>
 				<Image
 					className="w-full rounded-lg mb-4"
 					src={image}
@@ -117,12 +117,12 @@ const Projects = () => {
 				</div>
 				<div className="flex gap-4">
 					{github && (
-						<LinkButton className="inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black" href={github}>
+						<LinkButton href={github}>
 							<GithubIcon className="w-2 h-2" /> Code
 						</LinkButton>
 					)}
 					{link && (
-						<LinkButton className="inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black" href={link}>
+						<LinkButton href={link}>
 							<VerIcon className="w-2 h-2" /> Ver
 						</LinkButton>
 					)}

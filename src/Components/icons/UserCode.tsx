@@ -6,7 +6,7 @@ export default function UserCode({ width = 40, height = 40 }) {
 			height={height}
 			viewBox="0 0 24 24"
 			fill="none"
-			stroke="currentColor"
+			stroke="white"
 			strokeWidth="2"
 			strokeLinecap="round"
 			strokeLinejoin="round"

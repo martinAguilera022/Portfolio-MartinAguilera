@@ -11,7 +11,7 @@ export default function AboutMe(){
             </h1>
             </section>
            
-            <p className="text-1xl py-4">
+            <p className="text-1xl py-4 text-white">
             👨‍💻 Soy estudiante de tercer año de la Licenciatura en Informática, donde he adquirido sólidos conocimientos en Java, SQL, algoritmos y estructuras de datos. Además, complementé mi formación con la carrera de Desarrollador Front-End en Coderhouse, lo que me permitió profundizar en maquetación web, SEO, JavaScript, SASS, HTML, CSS, Bootstrap y React.
 
             🚀 A lo largo de mi trayectoria, he trabajado en diversos proyectos de desarrollo web, incluyendo una plataforma para la gestión de torneos de pádel, donde implementé lógica avanzada para la asignación de horarios y la administración de cruces.

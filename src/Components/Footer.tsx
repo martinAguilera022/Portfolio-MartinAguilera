@@ -15,7 +15,7 @@ const Footer = () => {
 					</a>
 					. Casi todos los derechos reservados
 				</span>
-				<ul className="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0">
+				<ul className="flex flex-wrap text-white items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0">
 					<li>
 						<Link href="/#sobre-mi"> {/* Cambia a Link */}
 							<a className="hover:underline me-4 md:me-6"> {/* Mantén el <a> dentro de <Link> */}
