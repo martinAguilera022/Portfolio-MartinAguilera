@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import '@fontsource-variable/onest';
+if (typeof window !== "undefined") {
+  require('@fontsource-variable/onest');
+}
+
 
 import Home from "./page";
 
