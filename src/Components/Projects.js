@@ -82,7 +82,7 @@ const Projects = () => {
 			title: "NexShop - Maquetacion de E-commerce",
 			description:
 				"Es una maquetacion de un E-commerce con todas sus secciones necesarias, Optimizacion Seo y Responsive",
-			image: "/projects/NextShop.png",
+			image: "/projects/nexShop.png",
 			link: "https://martinaguilera022.github.io/nexshop/",
 			github: "https://github.com/martinAguilera022/nexshop",
 			tags: [TAGS.HTML, TAGS.CSS, TAGS.JavaScript, TAGS.Sass],

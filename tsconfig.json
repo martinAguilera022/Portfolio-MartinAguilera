@@ -32,7 +32,7 @@
     "src/Components/Icons/ButtonLinks.js",
     "src/Components/Badge.tsx",
     "src/Components/Icons/HTMLIcon.js",
-    "src/Components/AboutMe.jsx",
+    "src/Components/AboutMe.tsx",
     "src/Components/Icons/VerIcon.js",
     "src/Components/NavBar.tsx",
     "src/Components/Footer.tsx",

@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main className='w-full mx-auto lg:w-[740px]  flex flex-col'>
 
-      <section id='HOME' className="h-screen flex flex-col  justify-center">
+      <section id='HOME' className="h-screen flex flex-col  justify-center gap-y-4">
         <CodeIcon />
         <h1 className='text-white text-4xl font-bold flex flex-row gap-x-4 pb-4'>
           Holaa, soy Martin Aguilera👋🏻. 

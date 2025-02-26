@@ -1,4 +1,6 @@
-import UserCode from "./Icons/UserCode";
+import UserCode from './Icons/UserCode';
+
+
 export default function AboutMe(){
     return(
         <div id="sobre-mi" className="h-100vh">
