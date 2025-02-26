@@ -28,16 +28,19 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/Components/Projects.js",
-    "src/Components/Icons/TailwindIcon.js",
+    "src/Components/Icons/TailwindIcon.tsx",
     "src/Components/Icons/ButtonLinks.js",
+    "src/Components/Icons/code.tsx",
     "src/Components/Badge.tsx",
-    "src/Components/Icons/HTMLIcon.js",
+    "src/Components/Icons/HTMLIcon.tsx",
     "src/Components/AboutMe.tsx",
     "src/Components/Icons/VerIcon.js",
     "src/Components/NavBar.tsx",
     "src/Components/Footer.tsx",
     "src/Components/Icons/GithubIcon.tsx",
-    "src/Components/Icons/LinkedIn.tsx"
+    "src/Components/Icons/LinkedIn.tsx",
+    "src/Components/Icons/UserCode.tsx",
+    "src/Components/Icons/ReactIcon.tsx",
 
   ],
   "exclude": ["node_modules"]
