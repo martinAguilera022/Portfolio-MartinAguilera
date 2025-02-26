@@ -95,7 +95,13 @@ const Projects = () => {
 			<div className=" p-6 rounded-lg shadow-md">
 				<h3 className="text-2xl font-bold mb-4 text-green-400">{title}</h3>
 				<p className="text-lg mb-4">{description}</p>
-				<Image className="w-full rounded-lg mb-4" src={image} alt={title} />
+				<Image
+					className="w-full rounded-lg mb-4"
+					src={image}
+					alt={title}
+					width={400}
+					height={400}
+				/>
 				<div className="flex flex-wrap gap-2 mb-4">
 					{tags.map((tag, index) => (
 						<span

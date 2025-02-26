@@ -1,6 +1,6 @@
 
 import Link from 'next/link'; // Importa el componente Link
-import "@/styles/globals.css";
+import "../app/globals.css";
 
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
