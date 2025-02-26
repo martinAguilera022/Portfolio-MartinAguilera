@@ -1,4 +1,4 @@
-const TaildwindIcon = ({width = 40, height = 40, ...props}) => {
+const TaildwindIcon = ({width = 40, height = 40}) => {
     return (
     <svg
       

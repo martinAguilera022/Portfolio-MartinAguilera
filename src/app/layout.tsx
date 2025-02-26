@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
 import '@fontsource-variable/onest';
 
@@ -7,26 +7,15 @@ import Home from "./page";
 
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
 
 export const metadata: Metadata = {
   title: "Portofolio de Martin Aguilera Desarrollador y Programador Web",
   description: "Este es mi portofolio de desarrollador frontend ",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout() {
   return (
     <html lang="en">
       <body

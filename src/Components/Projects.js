@@ -2,7 +2,6 @@ import React from "react";
 import CodeIcon from "./icons/code";
 import TaildwindIcon from "./icons/TaildwindIcon";
 import ReactIcon from "./icons/ReactIcon";
-import LinkedInIcon from "./icons/LinkedIn";
 import LinkButton from "./LinkButton";
 import VerIcon from "./icons/VerIcon";
 import GithubIcon from "./icons/GithubIcon";
@@ -11,6 +10,7 @@ import JavaScriptIcon from "./icons/JavaScriptIcon";
 import FireBaseIcon from "./icons/FireBaseIcon";
 import SassIcon from "./icons/SassIcon";
 import cssIcon from "./icons/cssIcon";
+import Image from "next/image";
 const Projects = () => {
 	const TAGS = {
 		TAILWIND: {
@@ -95,7 +95,7 @@ const Projects = () => {
 			<div className=" p-6 rounded-lg shadow-md">
 				<h3 className="text-2xl font-bold mb-4 text-green-400">{title}</h3>
 				<p className="text-lg mb-4">{description}</p>
-				<img className="w-full rounded-lg mb-4" src={image} alt={title} />
+				<Image className="w-full rounded-lg mb-4" src={image} alt={title} />
 				<div className="flex flex-wrap gap-2 mb-4">
 					{tags.map((tag, index) => (
 						<span

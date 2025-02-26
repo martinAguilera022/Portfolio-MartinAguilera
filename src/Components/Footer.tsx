@@ -1,4 +1,6 @@
 // components/Footer.js
+import Link from 'next/link'; // Importa el componente Link
+
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
 
@@ -14,9 +16,11 @@ const Footer = () => {
 				</span>
 				<ul className="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0">
 					<li>
-						<a href="/#sobre-mi" className="hover:underline me-4 md:me-6">
-							Sobre mí
-						</a>
+						<Link href="/#sobre-mi"> {/* Cambia a Link */}
+							<a className="hover:underline me-4 md:me-6"> {/* Mantén el <a> dentro de <Link> */}
+								Sobre mí
+							</a>
+						</Link>
 					</li>
 					<li>
 						<a
