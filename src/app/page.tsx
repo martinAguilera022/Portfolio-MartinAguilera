@@ -10,6 +10,7 @@ import Projects from '../Components/Projects';
 
 export default function Home() {
   return (
+    
     <main className='w-full mx-auto lg:w-[740px]  flex flex-col'>
 
       <section id='HOME' className="h-screen flex flex-col  justify-center gap-y-4">
