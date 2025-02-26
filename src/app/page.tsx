@@ -1,10 +1,10 @@
 
 import Badge from '../Components/Badge';
-import GithubIcon from "../Components/Icons/GithubIcon";
-import LinkedInIcon from "../Components/Icons/LinkedIn";
-import GoogleEmailIcon from '../Components/Icons/Gmail';
-import ButtonLink from '../Components/Icons/ButtonLinks';
-import CodeIcon from '../Components/Icons/code';
+import GithubIcon from "../Components/icons/GithubIcon";
+import LinkedInIcon from "../Components/icons/LinkedIn";
+import GoogleEmailIcon from '../Components/icons/Gmail';
+import ButtonLink from '../Components/icons/ButtonLinks';
+import CodeIcon from '../Components/icons/code';
 import AboutMe from '../Components/AboutMe';
 import Projects from '../Components/Projects';
 

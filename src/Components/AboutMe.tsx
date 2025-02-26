@@ -1,4 +1,4 @@
-import UserCode from "./Icons/UserCode";
+import UserCode from "./icons/UserCode";
 
 export default function AboutMe(){
     return(
