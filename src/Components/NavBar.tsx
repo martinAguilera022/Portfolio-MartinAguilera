@@ -1,3 +1,5 @@
+import "@/styles/globals.css";
+
 export default function NavBar() {
 	return (
 		<header className="bg-gray bg-opacity-100 fixed top-0 z-10 flex justify-center  w-full mx-auto mt-2 ">
