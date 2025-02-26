@@ -1,4 +1,4 @@
-import UserCode from "./Icons/UserCode.tsx";
+import UserCode from "./Icons/UserCode";
 
 export default function AboutMe(){
     return(
