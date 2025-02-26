@@ -1,5 +1,5 @@
 
-import UserCode from '../Components/Icons/UserCode';
+import UserCode from './Icons/UserCode';
 
 
 export default function AboutMe(){
