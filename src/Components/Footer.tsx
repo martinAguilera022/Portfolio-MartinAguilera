@@ -1,4 +1,4 @@
-// components/Footer.js
+
 import Link from 'next/link'; // Importa el componente Link
 
 const Footer = () => {
