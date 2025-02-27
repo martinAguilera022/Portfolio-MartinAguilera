@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-if (typeof window !== "undefined") {
-  require('@fontsource-variable/onest');
-}
 
 
+import '@fontsource-variable/onest';
 import Home from "./page";
 
 import Footer from '../Components/Footer';
