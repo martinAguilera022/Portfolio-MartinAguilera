@@ -12,10 +12,16 @@ interface BlurTextProps {
   direction?: 'top' | 'bottom';
   threshold?: number;
   rootMargin?: string;
-  animationFrom?: Record<string, any>;
-  animationTo?: Record<string, any>[];
+  animationFrom?: AnimationStyles;
+  animationTo?: AnimationStyles[];
   easing?: (t: number) => number | string;
   onAnimationComplete?: () => void;
+}
+
+interface AnimationStyles {
+  filter: string;
+  opacity: number;
+  transform: string;
 }
 
 const BlurText: React.FC<BlurTextProps> = ({
@@ -37,11 +43,11 @@ const BlurText: React.FC<BlurTextProps> = ({
   const animatedCount = useRef(0);
 
   // Default animations based on direction
-  const defaultFrom: Record<string, any> = direction === 'top'
+  const defaultFrom: AnimationStyles = direction === 'top'
     ? { filter: 'blur(10px)', opacity: 0, transform: 'translate3d(0,-50px,0)' }
     : { filter: 'blur(10px)', opacity: 0, transform: 'translate3d(0,50px,0)' };
   
-  const defaultTo: Record<string, any>[] = [
+  const defaultTo: AnimationStyles[] = [
     {
       filter: 'blur(5px)',
       opacity: 0.5,
@@ -75,7 +81,7 @@ const BlurText: React.FC<BlurTextProps> = ({
     elements.map((_, i) => ({
       from: animationFrom || defaultFrom,
       to: inView
-        ? async (next: (arg: Record<string, any>) => Promise<void>) => {
+        ? async (next: (arg: AnimationStyles) => Promise<void>) => {
             for (const step of animationTo || defaultTo) {
               await next(step);
             }

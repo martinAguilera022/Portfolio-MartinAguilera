@@ -19,9 +19,15 @@ export default function Home() {
         
         <CodeIcon />
         <h1 className='text-white text-4xl font-bold flex flex-row gap-x-4 pb-4'>
-        Holaa,soy 
+        Holaa, soy 
         <RotatingText
-  texts={['Martin Aguilera👋🏻. ', 'Frontend developer','Amante del código','Desarrollador Web',]}
+  texts={[
+    'Martin Aguilera👋🏻',
+    'Frontend developer',
+    'Amante del código❤️',
+    'Desarrollador Web💻',
+  ]
+  }
   mainClassName="px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
   staggerFrom={"last"}
   initial={{ y: "100%" }}
