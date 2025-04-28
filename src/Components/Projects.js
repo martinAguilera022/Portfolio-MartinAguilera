@@ -11,6 +11,8 @@ import FireBaseIcon from "./icons/FireBaseIcon";
 import SassIcon from "./icons/SassIcon";
 import cssIcon from "./icons/cssIcon";
 import Image from "next/image";
+import BootstrapIcon from "./icons/BootstrapIcon";
+import AnimatedContent from "./ReactComponents/AnimatedContent";
 const Projects = () => {
 	const TAGS = {
 		TAILWIND: {
@@ -48,6 +50,11 @@ const Projects = () => {
 			className: "",
 			icon: ReactIcon,
 		},
+		BootStap: {
+			name: "BootStap",
+			className: "",
+			icon: BootstrapIcon,
+		},
 	};
 
 	const projects = [
@@ -67,7 +74,7 @@ const Projects = () => {
 			image: "/projects/PadelPlanner.png",
 			link: "https://martinaguilera022.github.io/PadelPlanner/",
 			github: "https://github.com/martinAguilera022/PadelPlanner",
-			tags: [TAGS.HTML, TAGS.CSS, TAGS.JavaScript],
+			tags: [TAGS.HTML, TAGS.CSS, TAGS.JavaScript, TAGS.Sass],
 		},
 		{
 			title: "App del Clima ",
@@ -85,7 +92,7 @@ const Projects = () => {
 			image: "/projects/nexShop.png",
 			link: "https://martinaguilera022.github.io/nexshop/",
 			github: "https://github.com/martinAguilera022/nexshop",
-			tags: [TAGS.HTML, TAGS.CSS, TAGS.JavaScript, TAGS.Sass],
+			tags: [TAGS.HTML, TAGS.CSS, TAGS.JavaScript, TAGS.Sass, TAGS.BootStap],
 		},
 		// Agrega más proyectos aquí
 	];
@@ -139,15 +146,26 @@ const Projects = () => {
 			</section>
 			<section id="proyectos" className="grid grid-cols-1 md:grid-cols-1 gap-4">
 				{projects.map((project, index) => (
-					<ProjectCard
-						key={index}
-						title={project.title}
-						description={project.description}
-						image={project.image}
-						link={project.link}
-						github={project.github}
-						tags={project.tags}
-					/>
+					<AnimatedContent
+						distance={150}
+						direction="vertical"
+						reverse={false}
+						config={{ tension: 80, friction: 20 }}
+						initialOpacity={0.2}
+						animateOpacity
+						scale={1.1}
+						threshold={0.2}
+					>
+						<ProjectCard
+							key={index}
+							title={project.title}
+							description={project.description}
+							image={project.image}
+							link={project.link}
+							github={project.github}
+							tags={project.tags}
+						/>
+					</AnimatedContent>
 				))}
 			</section>
 		</div>
