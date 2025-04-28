@@ -1,8 +1,14 @@
 "use client";
 import { useRef, useEffect, useState } from 'react';
-import { useSprings, animated, SpringValue } from '@react-spring/web';
+import { useSprings, animated, SpringValue, EasingFunction } from '@react-spring/web';
 
 const AnimatedSpan = animated.span as React.FC<React.HTMLAttributes<HTMLSpanElement>>;
+
+type AnimationProps = {
+  filter: string;
+  opacity: number;
+  transform: string;
+};
 
 interface BlurTextProps {
   text?: string;
@@ -12,9 +18,9 @@ interface BlurTextProps {
   direction?: 'top' | 'bottom';
   threshold?: number;
   rootMargin?: string;
-  animationFrom?: Record<string, any>;
-  animationTo?: Record<string, any>[];
-  easing?: (t: number) => number | string;
+  animationFrom?: AnimationProps;
+  animationTo?: AnimationProps[];
+  easing?: EasingFunction;
   onAnimationComplete?: () => void;
 }
 
@@ -28,7 +34,7 @@ const BlurText: React.FC<BlurTextProps> = ({
   rootMargin = '0px',
   animationFrom,
   animationTo,
-  easing = 'easeOutCubic',
+  easing,
   onAnimationComplete,
 }) => {
   const elements = animateBy === 'words' ? text.split(' ') : text.split('');
@@ -36,12 +42,11 @@ const BlurText: React.FC<BlurTextProps> = ({
   const ref = useRef<HTMLParagraphElement>(null);
   const animatedCount = useRef(0);
 
-  // Default animations based on direction
-  const defaultFrom: Record<string, any> = direction === 'top'
+  const defaultFrom: AnimationProps = direction === 'top'
     ? { filter: 'blur(10px)', opacity: 0, transform: 'translate3d(0,-50px,0)' }
     : { filter: 'blur(10px)', opacity: 0, transform: 'translate3d(0,50px,0)' };
   
-  const defaultTo: Record<string, any>[] = [
+  const defaultTo: AnimationProps[] = [
     {
       filter: 'blur(5px)',
       opacity: 0.5,
@@ -75,18 +80,18 @@ const BlurText: React.FC<BlurTextProps> = ({
     elements.map((_, i) => ({
       from: animationFrom || defaultFrom,
       to: inView
-        ? async (next: (arg: Record<string, SpringValue<any>>) => Promise<void>) => {
-          for (const step of animationTo || defaultTo) {
-            await next(step);
+        ? async (next: (arg: AnimationProps) => Promise<void>) => {
+            for (const step of animationTo || defaultTo) {
+              await next(step);
+            }
+            animatedCount.current += 1;
+            if (animatedCount.current === elements.length && onAnimationComplete) {
+              onAnimationComplete();
+            }
           }
-          animatedCount.current += 1;
-          if (animatedCount.current === elements.length && onAnimationComplete) {
-            onAnimationComplete();
-          }
-        }
         : animationFrom || defaultFrom,
       delay: i * delay,
-      config: { easing: easing as any },
+      config: { easing: easing },
     }))
   );
 
@@ -95,7 +100,7 @@ const BlurText: React.FC<BlurTextProps> = ({
       {springs.map((props, index) => (
         <AnimatedSpan
           key={index}
-          style={props}
+          
           className="inline-block will-change-[transform,filter,opacity]"
         >
           {elements[index] === ' ' ? '\u00A0' : elements[index]}

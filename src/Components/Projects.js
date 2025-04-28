@@ -147,6 +147,7 @@ const Projects = () => {
 			<section id="proyectos" className="grid grid-cols-1 md:grid-cols-1 gap-4">
 				{projects.map((project, index) => (
 					<AnimatedContent
+						key={index}
 						distance={150}
 						direction="vertical"
 						reverse={false}
@@ -157,7 +158,7 @@ const Projects = () => {
 						threshold={0.2}
 					>
 						<ProjectCard
-							key={index}
+							
 							title={project.title}
 							description={project.description}
 							image={project.image}
