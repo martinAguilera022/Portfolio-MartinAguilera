@@ -14,7 +14,7 @@ interface DecryptedTextProps {
     encryptedClassName?: string
     parentClassName?: string
     animateOn?: 'view' | 'hover'
-    [key: string]: any
+    [key: string]: unknown // Cambié 'any' por 'unknown'
 }
 
 export default function DecryptedText({
