@@ -2,6 +2,7 @@
 
 import { useRef, useEffect, useState, ReactNode } from "react";
 import { useSpring, animated, SpringConfig } from "@react-spring/web";
+import { HTMLAttributes } from 'react';
 
 interface AnimatedContentProps {
   children: ReactNode;
@@ -74,7 +75,7 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
   });
 
   return (
-    <animated.div ref={ref} style={springProps}>
+    <animated.div ref={ref} style={springProps as HTMLAttributes<HTMLDivElement>["style"]}>
       {children}
     </animated.div>
   );
